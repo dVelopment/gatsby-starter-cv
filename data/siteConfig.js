@@ -1,7 +1,7 @@
 module.exports = {
   siteTitle: "Hi! I'm Daniel!",
   siteDescription: 'I’m Daniel and I’m a full-stack JavaScript engineer!',
-  keyWords: ['gatsbyjs', 'react', 'curriculum'],
+  keyWords: ['daniel holzmann', 'web developer', 'developer'],
   authorName: 'Daniel Holzmann',
   twitterUsername: 'h2online',
   githubUsername: 'dVelopment',
@@ -64,14 +64,23 @@ module.exports = {
       description: 'Development of web, Android and iOS apps.',
     },
     {
-      company: 'Anapro',
+      company: 'atipso',
       begin: {
-        month: 'set',
-        year: '2012',
+        month: 'feb',
+        year: '2011',
       },
       duration: '5 years',
       occupation: 'Lead Developer',
       description: 'Consultant/Technical lead as a freelancer.',
+    },
+    {
+      company: 'd.velopment.at',
+      begin: {
+        month: 'feb',
+        year: '2006',
+      },
+      occupation: 'CEO',
+      description: 'Freelance web developer, specialized on React and Node.js',
     },
     /* ... */
   ],
@@ -88,11 +97,11 @@ module.exports = {
   background_color: '#ffffff',
   theme_color: '#25303B',
   display: 'minimal-ui',
-  icon: 'src/assets/gatsby-icon.png',
+  icon: 'static/favicon/favicon-512.png',
   headerLinks: [
     {
       label: 'Daniel Holzmann',
       url: '/',
     },
   ],
-}
+};
