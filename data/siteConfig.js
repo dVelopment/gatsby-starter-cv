@@ -6,10 +6,11 @@ module.exports = {
   twitterUsername: 'h2online',
   githubUsername: 'dVelopment',
   authorAvatar: '/images/avatar.jpg',
-  authorDescription: `Developer, passionate about what I do. Always interested in how the sites were made, I started to study HTML by hobby. <br />
-    In 2012 I started working as a support technician and I approached the developers.
-    In 2015, I started to study C # and started to contribute with the team giving maintenance in an application in C # and .NET. <br />
-    I currently work as a frontend developer and mainly work with <strong>Javascript, NodeJS e React.</strong>`,
+  authorDescription: `Developer, web enthusiast.<br />
+  I started coding for fun as a teenager. As an adult, it grew into finally being my main occupation.<br />
+  At age 30, after years of experience and autodidact training, I started studying 
+  <strong>Software Engineering</strong> at the <strong>University of Applied Sciences Upper Austria in Hagenberg</strong>.<br />
+  Now I work as a full-stack web developer and mainly work with <strong>JavaScript, NodeJS and React/React Native</strong>.`,
   skills: [
     {
       name: 'Javascript',
