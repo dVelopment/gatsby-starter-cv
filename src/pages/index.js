@@ -1,17 +1,17 @@
-import React from 'react'
-import styled from 'styled-components'
-import { Container, Row, Col } from 'react-awesome-styled-grid'
-import { FaGithub, FaLinkedin, FaEnvelope, FaTwitter } from "react-icons/fa"
-import siteConfig from '../../data/siteConfig'
+import { Col, Container, Row } from 'react-awesome-styled-grid'
+import { FaEnvelope, FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
 
-import Layout from '../components/layout'
-import Hero from '../components/hero'
-import SEO from '../components/SEO'
-import Wrapper from '../components/wrapper'
 import About from '../components/about'
+import Hero from '../components/hero'
+import Layout from '../components/layout'
+import React from 'react'
+import Repositories from '../components/repositories'
+import SEO from '../components/SEO'
 import Skills from '../components/skills'
 import Timeline from '../components/timeline'
-import Repositories from '../components/repositories'
+import Wrapper from '../components/wrapper'
+import siteConfig from '../../data/siteConfig'
+import styled from 'styled-components'
 
 const Separator = styled.hr`
   margin-top: 24px;
@@ -19,57 +19,83 @@ const Separator = styled.hr`
 `
 
 class Home extends React.Component {
-  render () {
+  render() {
     // validate siteConfig settings
     if (siteConfig.googleAnalyticsId === 'UA-000000000-1') {
-      console.error('WARNING: Please set a proper googleAnalyticsId. See https://analytics.google.com for details.');
+      console.error(
+        'WARNING: Please set a proper googleAnalyticsId. See https://analytics.google.com for details.'
+      )
     }
 
     const title = siteConfig.siteTitle
-    const {keywords} = siteConfig
+    const { keywords } = siteConfig
     return (
       <Layout location={this.props.location}>
-        <SEO
-          title={title}
-          keywords={keywords}
-        />
+        <SEO title={title} keywords={keywords} />
 
-        <Hero
-          heroImg={siteConfig.siteCover}
-          title={title}
-        />
+        <Hero heroImg={siteConfig.siteCover} title={title} />
 
-        <Wrapper className={this.props.className} >
+        <Wrapper className={this.props.className}>
           <Container className="page-content" fluid>
             <Row>
-              <Col xs={4} className='avatar'>
-                <img
-                  className='avatar__image'
-                  src='/images/avatar.jpeg'
-                  alt='user avatar'
-                />
+              <Col xs={4} className="avatar">
+                <picture>
+                  <source
+                    srcSet="/images/avatar.webp, /images/avatar@2x.webp 2x, /images/avatar@3x.webp 3x"
+                    type="image/webp"
+                  />
+                  <source
+                    srcSet="/images/avatar.jpg, /images/avatar@2x.jpg 2x, /images/avatar@3x.jpg 3x"
+                    type="image/jpeg"
+                  />
+                  <img
+                    className="avatar__image"
+                    src="/images/avatar.jpg"
+                    alt="Daniel Holzmann"
+                  />
+                </picture>
                 <div className="social">
-                  {siteConfig.social.github && <a className="social-link github" href={siteConfig.social.github}>
-                    <FaGithub className="social-icon" size="32" />
-                  </a>}
-                  {siteConfig.social.linkedin && <a className="social-link linkedin" href={siteConfig.social.linkedin}>
-                    <FaLinkedin className="social-icon" size="32" />
-                  </a>}
-                  {siteConfig.social.twitter && <a className="social-link twitter" href={siteConfig.social.twitter}>
-                    <FaTwitter className="social-icon" size="32" />
-                  </a>}
-                  {siteConfig.social.email && <a className="social-link email" href={`mailto:${siteConfig.social.email}`}>
-                    <FaEnvelope className="social-icon" size="32" />
-                  </a>}
+                  {siteConfig.social.github && (
+                    <a
+                      className="social-link github"
+                      href={siteConfig.social.github}
+                    >
+                      <FaGithub className="social-icon" size="32" />
+                    </a>
+                  )}
+                  {siteConfig.social.linkedin && (
+                    <a
+                      className="social-link linkedin"
+                      href={siteConfig.social.linkedin}
+                    >
+                      <FaLinkedin className="social-icon" size="32" />
+                    </a>
+                  )}
+                  {siteConfig.social.twitter && (
+                    <a
+                      className="social-link twitter"
+                      href={siteConfig.social.twitter}
+                    >
+                      <FaTwitter className="social-icon" size="32" />
+                    </a>
+                  )}
+                  {siteConfig.social.email && (
+                    <a
+                      className="social-link email"
+                      href={`mailto:${siteConfig.social.email}`}
+                    >
+                      <FaEnvelope className="social-icon" size="32" />
+                    </a>
+                  )}
                 </div>
               </Col>
             </Row>
             <Row>
               <Col xs={4} sm={4}>
-                <About title='About' text={siteConfig.authorDescription}/>
+                <About title="About" text={siteConfig.authorDescription} />
               </Col>
               <Col xs={4} sm={4}>
-                <Skills title='Skills' skills={siteConfig.skills} />
+                <Skills title="Skills" skills={siteConfig.skills} />
               </Col>
             </Row>
             <Separator />
@@ -96,7 +122,7 @@ export default styled(Home)`
   }
 
   .avatar__image {
-    box-shadow: 3px 3px 15px 0px rgba(0,0,0,0.75);
+    box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.75);
     max-width: 200px;
     border-radius: 100px;
     margin: 0 auto 24px;
@@ -121,7 +147,7 @@ export default styled(Home)`
   }
 
   a.social-link.linkedin:hover {
-    color: #0077B5;
+    color: #0077b5;
   }
 
   a.social-link.email:hover {
