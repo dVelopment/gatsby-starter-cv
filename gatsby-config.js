@@ -30,6 +30,7 @@ module.exports = {
         specialChars: '/:',
       },
     },
+    // 'gatsby-plugin-netlify',
     {
       resolve: 'gatsby-source-graphql',
       options: {
