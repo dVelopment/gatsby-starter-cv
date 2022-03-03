@@ -4,3 +4,9 @@ https://velopment.at/* https://danielholzmann.com/:splat 301!
 
 http://*.velopment.at/* https://danielholzmann.com/:splat 301!
 https://*.velopment.at/* https://danielholzmann.com/:splat 301!
+
+http://danielholzmann.at/* https://danielholzmann.com/:splat 301!
+https://danielholzmann.at/* https://danielholzmann.com/:splat 301!
+
+http://*.danielholzmann.at/* https://danielholzmann.com/:splat 301!
+https://*.danielholzmann.at/* https://danielholzmann.com/:splat 301!
