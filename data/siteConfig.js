@@ -104,4 +104,5 @@ module.exports = {
       url: '/',
     },
   ],
+  mastodon: 'https://wien.rocks/@dVelopment'
 };
