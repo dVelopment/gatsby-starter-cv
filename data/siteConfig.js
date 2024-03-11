@@ -104,5 +104,6 @@ module.exports = {
       url: '/',
     },
   ],
-  mastodon: 'https://wien.rocks/@dVelopment'
+  mastodon: 'https://wien.rocks/@dVelopment',
+  gravatar: 'https://gravatar.com/h2online',
 };

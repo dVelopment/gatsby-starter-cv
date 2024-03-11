@@ -63,6 +63,8 @@ function SEO({ description, lang, meta, keywords, title }) {
               .concat(meta)}
           >
             {siteConfig.mastodon ? <link rel="me" href={siteConfig.mastodon} /> : null}
+            {siteConfig.gravatar ? <link rel="me" href={siteConfig.gravatar} /> : null}
+            {siteConfig.githubUsername ? <link rel="me" href={`https://github.com/${siteConfig.githubUsername}`} /> : null}
           </Helmet>
         )
       }}
