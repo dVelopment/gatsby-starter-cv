@@ -6,18 +6,19 @@ Personal portfolio website for Daniel Holzmann (danielholzmann.com). A single-pa
 
 ## Tech Stack
 
-- **Framework**: Gatsby v2.18 (React-based static site generator)
-- **UI**: React 16, styled-components
+- **Framework**: Gatsby v5.14+ (React-based static site generator)
+- **UI**: React 18, styled-components 6
 - **Data**: GitHub GraphQL API for repository display
 - **Deployment**: Netlify (see `_redirects`, `gatsby-plugin-netlify`)
-- **Node version**: 16.14.0 (see `.nvmrc`)
+- **Node version**: 24+ (see `.nvmrc`)
 
 ## Commands
 
 ```bash
-yarn develop    # Start dev server (localhost:8000)
-yarn build      # Production build
-yarn format     # Format code with Prettier
+npm run develop  # Start dev server (localhost:8000)
+npm run build    # Production build
+npm run clean    # Clean Gatsby cache
+npm run format   # Format code with Prettier
 ```
 
 ## Project Structure
@@ -33,7 +34,7 @@ src/
 │   ├── skills/     # Skills progress bars
 │   ├── timeline/   # Work history timeline
 │   └── styles/     # Global styles, CSS reset
-├── images/         # Source images (processed by gatsby-image)
+├── images/         # Source images (processed by gatsby-plugin-image)
 ├── pages/          # Gatsby pages (index.js, 404.js)
 data/
 └── siteConfig.js   # Site configuration (bio, skills, jobs, social links)
