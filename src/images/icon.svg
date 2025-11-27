@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Background -->
+  <rect width="512" height="512" rx="96" fill="#0A0A0F"/>
+
+  <!-- Subtle border -->
+  <rect x="4" y="4" width="504" height="504" rx="92" fill="none" stroke="#00FF41" stroke-width="3" opacity="0.4"/>
+
+  <!-- DH Monogram - compact design -->
+  <g fill="#00FF41">
+    <!-- D letter -->
+    <path d="M56 120 L56 392 L140 392 C230 392 280 330 280 256 C280 182 230 120 140 120 Z M104 168 L132 168 C194 168 228 200 228 256 C228 312 194 344 132 344 L104 344 Z"/>
+
+    <!-- H letter -->
+    <rect x="300" y="120" width="48" height="272" rx="4"/>
+    <rect x="408" y="120" width="48" height="272" rx="4"/>
+    <rect x="300" y="232" width="156" height="48" rx="4"/>
+  </g>
+</svg>
